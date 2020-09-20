@@ -8,8 +8,14 @@ main {
 }
 
 .landing {
-  min-height: 100vh;
-  background: url("images/green.jpg");
+  min-height: 5vh;
+  background: url("/images/green.jpg");
+  background-size: cover;
+  padding: 0rem 5rem;
+}
+.footer{
+  min-height: 15vh;
+  background: url("/images/green.jpg");
   background-size: cover;
   padding: 0rem 5rem;
 }
@@ -34,13 +40,9 @@ nav {
 }
 
 .big-text {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -30%);
-  font-size: 5rem;
+  font-size: 1rem;
   font-family: "Lobster", cursive;
-  color: rgb(61, 61, 61);
+ 
 }
 
 .intro {
@@ -67,8 +69,19 @@ nav {
 /* japanease b&w text */
 .intro-text {
   color: rgb(1, 1, 1);
-  /* font-family: "Heebo", sans-serif; */
-  font-size: 2.10rem;
+  font-size: 1rem;
+  
+}
+.text{
+  display: flex;
+  text-align: center;
+  line-height: 3;
+}
+span{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .hide {
@@ -81,23 +94,23 @@ nav {
   display: inline-block;
 }
 
-.parent-wrapper {
-  height: 100%;
+.main2{
   width: 100%;
-  border: 1px solid pink;
-}
-.parent {
-  display: flex;
-  font-size: 0;
-  flex-wrap: wrap;
-  margin: -10px 0 0 -10px;
+  max-height: 50vh;
 }
 
-.child {
-  display: inline-block;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: radial-gradient(red, yellow, green);
-  margin: 10px 0 0 10px;
-  flex-grow: 1;
-  height: 100px;
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
 }
+
+.flex-container > div {
+  background-color: black;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
